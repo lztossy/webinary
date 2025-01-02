@@ -1,7 +1,21 @@
-import type { NextConfig } from "next";
+import type { Configuration } from 'webpack'
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  webpack: (config: Configuration, { isServer }: { isServer: boolean }) => {
+    config.experiments = {
+      ...config.experiments,
+      asyncWebAssembly: true,
+    }
 
-export default nextConfig;
+    config.module?.rules?.push({
+      test: /\.wasm$/,
+      type: 'webassembly/async',
+    })
+
+    return config
+  },
+}
+
+export default nextConfig
+
