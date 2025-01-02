@@ -1,6 +1,6 @@
 # web-based (online) pe sig scanner
 
-built with rust & typescript
+built with rust web-assembly & typescript
 still a wip, expect bugs
 
 ![Webinary Logo](./webinary.png)
