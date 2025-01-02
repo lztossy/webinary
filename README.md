@@ -1,6 +1,7 @@
 # web-based (online) pe sig scanner
 
 built with rust & typescript
+still a wip, expect bugs
 
 ![Webinary Logo](./webinary.png)
 
@@ -14,3 +15,5 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+localhost/192 to view results
