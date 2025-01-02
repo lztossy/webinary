@@ -5,8 +5,6 @@ still a wip, expect bugs
 
 ![Webinary Logo](./webinary.png)
 
-## Getting Started
-
 ```bash
 npm run dev
 # or
