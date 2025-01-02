@@ -16,4 +16,4 @@ pnpm dev
 # or
 bun dev
 ```
-localhost/192 to view results
+localhost to view results
